@@ -19,5 +19,6 @@ from django.conf.urls import url
 from basicAPI import views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    url(r'^admin/', admin.site.urls),
+    url(r'^weight/', views.weight)
 ]
